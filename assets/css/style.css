@@ -1,0 +1,166 @@
+:root {
+  --main-bg-color: #f0f0f0;
+  --header-bg-color: slategray;
+  --header-text-color: white;
+  --link-color: black;
+  --link-hover-color: orangered;
+  --text-color: black;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.header nav ul li {
+  margin: 0;
+}
+
+.header nav ul li a {
+  color: var(--header-text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-size: 20px;
+}
+
+.header nav ul li a:hover {
+  color: var(--link-hover-color);
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.project a {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project span {
+  display: block;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.project a:hover {
+  transform: scale(1.05);
+}
+
+.contact-me ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-me ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-me ul li a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.contact-me ul li a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+.resume a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.resume :hover {
+ text-decoration: underline;
+ color: blue;
+}
+
+.resume img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.resume span {
+  font-size: 1.2rem;
+}
+.rounded-circle{
+border-radius: 50% !important;
+}
+
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .projects {
+      flex-direction: column;
+  }
+
+  .project {
+      flex: 1 1 100%;
+  }
+}
