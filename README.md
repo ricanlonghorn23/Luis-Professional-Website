@@ -25,7 +25,7 @@
 
 ## Website URL and GitHub Repository Links
 
-- To access Luis's Professional Profile website:
+- To access Luis's Professional Profile website: https://ricanlonghorn23.github.io/Luis-Professional-Website/
 - To access Luis's Professional Profile repository: https://github.com/ricanlonghorn23/Luis-Professional-Website.git
 
 ## Screenshot of website
